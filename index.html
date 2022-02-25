@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario PHP</title>
+</head>
+<body>
+   <div class="formulario">
+    <form action="formu.php" method="POST">
+       <table>
+             <h2 class="h2">Formulario</h2>
+            </tr>                          
+                <td>
+                     <input 
+                        type="text"
+                        placeholder="Nombre"
+                        name="nombre" required>
+                </td>                                          
+            <tr>
+
+
+            <tr>          
+                <td> 
+                    <input
+                        type="password"
+                        placeholder="Contraseña"
+                        name="password" 
+                        required>
+                </td>                                                          
+            </tr>
+
+
+            <tr>         
+                <td>
+                    <div class="radio-group">
+                        <label class="radio">
+                             
+                           <input  type="radio" name='genero' value="f" required>Femenino 
+                           <span></span>
+                        </label>
+                        
+                        <label class="radio">
+                            <input  type="radio" name='genero' value="m" required>Masculino
+                            <span></span>
+                        </label>
+                    </div>
+                            
+                </td>
+            </tr>
+
+
+            <tr>  
+                <td>
+                    <input type="email" name="email" placeholder=' Email' required> 
+                </td>
+            </tr>
+
+
+             <tr>        
+                 <td>
+                     <select class='seleccion' name='materia' required>
+                        <option selected hidden value="">MATERIAS</option>
+                        <option value="calculo">Calculo</option>
+                        <option value="matematicas">Matematicas</option>
+                        <option value="fisica">Fisica</option>
+                        <option value="database">Base de Datos</option>
+                        <option value="programacion">Programacion</option>
+                        <option value="analisis">Analisis de Sistemas</option>
+                     </select>
+                 </td>
+             </tr>
+
+
+             <tr>  
+                 <td>
+                     <input type="phone" placeholder="Telefono" name="telefono" required>
+                 </td>
+             </tr>
+
+
+             <tr>
+                 <td>
+                     <input  type="submit" value="ENVIAR" name="enviar">
+                 </td>
+             </tr>
+                
+       </table>
+    </form>
+</div> 
+</body>
+</html>
